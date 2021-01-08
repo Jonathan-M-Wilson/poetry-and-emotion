@@ -9,7 +9,7 @@ RSpec.describe 'Poems show page' do
 
   it "returns 10 poems by author keyword search" do
     expect(current_path).to eq('/search')
-    within('.search_results') do
+    within('.search-results') do
       expect(page).to have_content('Title:', count:10)
     end
   end
