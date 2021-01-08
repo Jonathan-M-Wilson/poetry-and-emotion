@@ -25,6 +25,3 @@ RSpec.describe 'Poems show page' do
     end
   end
 end
-
-# I should also see:
-# - The tone or tones for each poem
