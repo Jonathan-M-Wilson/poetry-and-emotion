@@ -8,6 +8,7 @@ class IBMService
   end
 
   private
+
   def conn
     Faraday.new 'https://api.us-south.tone-analyzer.watson.cloud.ibm.com/' do |f|
       f.basic_auth('apikey', ENV['IBM_API_KEY'])

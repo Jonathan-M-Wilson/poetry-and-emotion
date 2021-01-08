@@ -7,21 +7,21 @@ RSpec.describe 'Poems show page' do
     click_on 'Get Poems'
   end
 
-  it "returns 10 poems by author keyword search" do
+  it 'returns 10 poems by author keyword search' do
     expect(current_path).to eq('/search')
     within('.search-results') do
-      expect(page).to have_content('Title:', count:10)
+      expect(page).to have_content('Title:', count: 10)
     end
   end
 
-  it "displays a title, author, and poem for each result" do
+  it 'displays a title, author, and poem for each result' do
     expect(current_path).to eq('/search')
 
-    within(".poem-#{"Callers"}") do
-      expect(page).to have_content("Title: Not at Home to Callers")
+    within('.poem-Callers') do
+      expect(page).to have_content('Title: Not at Home to Callers')
       expect(page).to have_content('by: Emily Dickinson')
       expect(page).to have_content('Poem: Not at Home to Callers Says the Naked Tree -- Bonnet due in April -- Wishing you Good Day --')
-      expect(page).to have_content("Joy")
+      expect(page).to have_content('Joy')
     end
   end
 end
