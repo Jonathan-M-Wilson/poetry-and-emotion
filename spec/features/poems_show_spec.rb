@@ -21,20 +21,10 @@ RSpec.describe 'Poems show page' do
       expect(page).to have_content("Title: Not at Home to Callers")
       expect(page).to have_content('by: Emily Dickinson')
       expect(page).to have_content('Poem: Not at Home to Callers Says the Naked Tree -- Bonnet due in April -- Wishing you Good Day --')
-      #expect(page).to have_content(tone)
+      expect(page).to have_content(tone)
     end
   end
 end
 
-# When I visit "/"
-# And I fill in "Emily" in the textfield(Note: Use the existing search form)
-# And I click "Get Poems"
-# Then I should be on page "/search"
-# Then I should see a list of the first 10 poems
-# Then I should see the tone or tones listed for each poem.
-# For each poem I should see
-# - Title
-# - Author
-# - The poem(as a single string)
 # I should also see:
 # - The tone or tones for each poem
