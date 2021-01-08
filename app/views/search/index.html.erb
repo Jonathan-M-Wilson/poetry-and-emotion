@@ -2,7 +2,7 @@
 
 <section class="search-results">
   <% @results.each do |poem| %>
-  <section class="poem-<%= poem.title %>">
+  <section class="poem-<%= poem.title.split.last %>">
     Title: <%= poem.title %>, by: <%= poem.author %><br>
     Poem: <%= poem.string %><br>
     <br>
