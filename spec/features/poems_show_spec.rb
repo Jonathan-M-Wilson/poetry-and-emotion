@@ -21,7 +21,7 @@ RSpec.describe 'Poems show page' do
       expect(page).to have_content("Title: Not at Home to Callers")
       expect(page).to have_content('by: Emily Dickinson')
       expect(page).to have_content('Poem: Not at Home to Callers Says the Naked Tree -- Bonnet due in April -- Wishing you Good Day --')
-      expect(page).to have_content(tone)
+      expect(page).to have_content("Joy")
     end
   end
 end
