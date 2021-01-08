@@ -14,7 +14,7 @@ RSpec.describe 'Poems show page' do
     end
   end
 
-  it "displays a title, author, and poem for each result" do
+  xit "displays a title, author, and poem for each result" do
     expect(current_path).to eq('/search')
 
     within(".poem-#{}") do
