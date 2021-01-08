@@ -14,14 +14,14 @@ RSpec.describe 'Poems show page' do
     end
   end
 
-  xit "displays a title, author, and poem for each result" do
+  it "displays a title, author, and poem for each result" do
     expect(current_path).to eq('/search')
 
-    within(".poem-#{}") do
-      expect(page).to have_content(title)
-      expect(page).to have_content(author)
-      expect(page).to have_content(string)
-      expect(page).to have_content(tone)
+    within(".poem-#{"Callers"}") do
+      expect(page).to have_content("Title: Not at Home to Callers")
+      expect(page).to have_content('by: Emily Dickinson')
+      expect(page).to have_content('Poem: Not at Home to Callers Says the Naked Tree -- Bonnet due in April -- Wishing you Good Day --')
+      #expect(page).to have_content(tone)
     end
   end
 end
