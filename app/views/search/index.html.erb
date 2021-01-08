@@ -5,6 +5,7 @@
   <section class="poem-<%= poem.title.split.last %>">
     Title: <%= poem.title %>, by: <%= poem.author %><br>
     Poem: <%= poem.string %><br>
+    Tone: <%= poem.get_poem_tone.join(', ') %><br>
     <br>
   </section>
   <% end %>
