@@ -6,7 +6,7 @@ class PoetryService
     end
 
     def conn
-    private
+      private
       Faraday.new(url: 'https://poetrydb.org')
     end
 
