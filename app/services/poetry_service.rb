@@ -1,4 +1,4 @@
-class PoetryDBService
+class PoetryService
   class << self
     def get_poems(author)
       result = get_json("/author/#{author}")
